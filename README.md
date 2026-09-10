@@ -36,6 +36,7 @@ notebook-<configuration>-<model>-<instance-set>/
   predictions/logs/*.log      per-instance inference log
   evaluations/*.json          SWE-bench harness report (completed_ids, resolved_ids)
 EXPERIMENT.md                 generated summary of every run
+GENERATION_PROMPT.md          the prompt the five synthetic instances came from
 generate_report.py            regenerates EXPERIMENT.md
 split_notebook_run.py         splits one notebook run into the per-instance files
 ```
@@ -45,9 +46,11 @@ split_notebook_run.py         splits one notebook run into the per-instance file
 `notebook-chain-9b-5custom` = configuration `chain`, model `qwen3.5:9b`, five synthetic
 instances.
 
-- **Instance sets** — `5custom` five synthetic instances spanning five difficulty tiers;
-  `23lite` the SWE-bench Lite `dev` subset; `77litetest` a 77-instance subset of the
-  Lite test split (gold patch under 600 characters).
+- **Instance sets** — `5custom` five synthetic instances spanning five difficulty
+  tiers, each in its own `opendraco-instance-*` repository and generated from the
+  prompt in [`GENERATION_PROMPT.md`](GENERATION_PROMPT.md); `23lite` the SWE-bench
+  Lite `dev` subset; `77litetest` a 77-instance subset of the Lite test split (gold
+  patch under 600 characters).
 - **Configurations** — `chain` (our baseline) plus `agentscope_hybrid`,
   `experepair_star`, `hyperagent_star`, `joycode_star`, `lingxi_star`,
   `openhands_star`, `prometheus_tree`.
