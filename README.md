@@ -8,6 +8,10 @@ and the SWE-bench harness report, plus a generated summary of all runs in
 Nothing here is post-processed. The files are exactly what the runs produced, so any
 number in the paper can be traced back to the log or report it came from.
 
+For what the tool was pointed at and what it scored — the shipped task
+instantiations, the APR benchmark, and the five synthetic instances the difficulty
+ladder is built from — see [`BENCHMARK.md`](BENCHMARK.md).
+
 ## A note on the name: EvoMas → OpenDraco
 
 These experiments were run in June 2026, while the tool was still called **EvoMas**.
