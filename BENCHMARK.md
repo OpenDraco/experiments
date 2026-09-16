@@ -1,9 +1,5 @@
 # Task instantiations and benchmark
 
-What OpenDraco can be pointed at, and what it scored when it was. Moved out of the
-[OpenDraco](https://github.com/OpenDraco/OpenDraco) README so the tool's own docs stay
-about running the tool, and the results live next to the evidence for them.
-
 The runs behind these numbers are the `notebook-*` directories in this repository —
 [`EXPERIMENT.md`](EXPERIMENT.md) summarises every one, and
 [`README.md`](README.md#layout) explains how to read a run name.
